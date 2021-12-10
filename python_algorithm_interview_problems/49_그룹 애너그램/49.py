@@ -7,7 +7,7 @@ strs = ["eat","tea","tan","ate","nat","bat"]
 
 def groupAnagrams(strs) :
         # 문자열 배열을 받아 애너그램 단위로 그룹핑하라.
-        # 애너그램 : 문자를 재배열하여 다른 뜻을 가진 단어로 바꾸는 것 (언어유희) ex:문전박대->대박전문
+        # 애너그램 : 문자를 뒤집어서 다른 뜻을 가진 단어로 바꾸는 것 (언어유희) ex:문전박대->대박전문
 
     anagrams = collections.defaultdict(list)
     # 만약 존재하지 않는 키를 삽입하려 할 경우 keyerror가 발생하므로, 항상 디폴트를 생성해준다.

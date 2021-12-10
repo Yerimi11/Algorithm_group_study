@@ -26,6 +26,9 @@ banned = ["hit"]
 words = [word for word in re.sub(r'[^\w]', ' ', paragraph) 
         .lower().split()
             if word not in banned]
+        # for word in words:
+        #     if word in banned:
+        #         continue
 
 counts = collections.Counter(words)
 print(counts.most_common(1)[0][0]) # 1 빼도 돌아가지만 1을 써줘야 속도가 훨 빨라짐

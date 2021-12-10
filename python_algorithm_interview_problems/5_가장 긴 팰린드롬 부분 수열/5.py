@@ -24,4 +24,4 @@ def longestPalindrome(s):
 if __name__ == '__main__' :
    s = input().strip()
 
-   print(longestPalindrome(s))
+   print(longestPalindrome(s))  
