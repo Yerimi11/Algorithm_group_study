@@ -38,3 +38,5 @@ class Solution(object):
                 curr.val = temp
                 
         return node.next
+        
+        # 시간복잡도 : l1, l2중에 더 긴 리스트의 길이로 계산한다. small(o). Big(O)는 O(n)
