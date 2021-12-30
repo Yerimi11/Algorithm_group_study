@@ -36,3 +36,14 @@ class Solution(object):
     
         # 공간복잡도 O(n) (리스트만듦)
         # 시간복잡도 O(2n) = O(n)
+
+
+        for idx in range(len(temperatures)):
+            temp = temperatures[idx]        # temp : 받아온 온도, idx : 날짜순서
+            while stack and stack[-1][0] < temp:
+                l_temp, l_day = stack.pop()
+                result[l_day] = idx - l_day
+                
+            stack.append((temp, idx))
+        
+        return result
