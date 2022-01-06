@@ -17,9 +17,9 @@ class MyCircularDeque(object):
         :rtype: bool
         """
         if self.q[self.front-1] is None:
-		self.q[self.front-1] = value # 0 인덱스에 1이 삽입 
-		self.front = (self.front - 1) % self.maxlen # front를 한 칸 앞으로 옮긴다
-        	return True
+            self.q[self.front-1] = value # 0 인덱스에 1이 삽입 
+            self.front = (self.front - 1) % self.maxlen # front를 한 칸 앞으로 옮긴다
+            return True
         else:
         	return False
 
@@ -59,11 +59,11 @@ class MyCircularDeque(object):
         :rtype: bool
         """
         if self.q[self.rear - 1] is None:
-	   return False
-	else:
-	   self.q[self.rear - 1] = None	# rear는 맨 뒷 원소의 다음 위치니까 -1
-	   self.rear = (self.rear - 1) % self.maxlen	# rear는 값이 있는 위치의 뒤에 있어야 하니 삭제된 자리의 앞으로 이동
-	   return True
+	        return False
+        else:
+            self.q[self.rear - 1] = None	# rear는 맨 뒷 원소의 다음 위치니까 -1
+            self.rear = (self.rear - 1) % self.maxlen	# rear는 값이 있는 위치의 뒤에 있어야 하니 삭제된 자리의 앞으로 이동
+            return True
 
 # 지금 1 2 3 None
 #      front     rear
