@@ -4,13 +4,13 @@ class Solution(object):
         :type height: List[int]
         :rtype: int
         """
-        # 투 포인터 풀이 (교재 p.182 참고)
+        # 투 포인터 풀이 (교재 p.180 참고)
         if not height:
             return 0
 
         volume = 0
         left, right = 0, len(height) - 1
-        left_max, right_max = height[left], height[right]
+        left_max, right_max = height[left], height[right] # 0, 0도 OK 
 
         while left < right:
             left_max, right_max = max(height[left], left_max), max(height[right], right_max)
