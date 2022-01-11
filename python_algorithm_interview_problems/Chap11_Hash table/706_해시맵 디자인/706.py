@@ -35,7 +35,7 @@ class MyHashMap(object):
             if p.next is None:
                 break   # 반복문 종료
             p = p.next  # 다음 노드로 go
-            p.next = ListNode(key, value) # 다음 자리에 빈 노드 생성
+        p.next = ListNode(key, value) # 다음 자리에 빈 노드 생성
         
 
     def get(self, key): # 조회
