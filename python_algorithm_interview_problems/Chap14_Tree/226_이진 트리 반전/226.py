@@ -28,3 +28,8 @@ class Solution(object):
                 queue.append(node.right)
         
         return root
+
+#         # 파이썬다운 짧은 코드
+#         if root:
+#             root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+#             return root
